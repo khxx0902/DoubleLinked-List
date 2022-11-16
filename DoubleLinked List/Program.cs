@@ -94,5 +94,9 @@ namespace DoublyLinkedList
             current.next.prev = previous;
             return true;
         }
+        public void traverse()
+        {
+
+        }
     }
 }
