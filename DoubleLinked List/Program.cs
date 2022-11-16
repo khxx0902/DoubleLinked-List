@@ -54,6 +54,15 @@ namespace DoublyLinkedList
             }
             newnode.next = current;
             newnode.prev = previous;
+
+            if (current == null) ;
+            {
+                newnode.next = null;
+                previous.next = newnode;
+                return;
+            }
+            current.prev = newnode;
+            previous.next = newnode;
         }
     }
 }
