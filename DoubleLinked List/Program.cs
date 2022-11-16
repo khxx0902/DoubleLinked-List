@@ -52,6 +52,8 @@ namespace DoublyLinkedList
                     return;
                 }
             }
+            newnode.next = current;
+            newnode.prev = previous;
         }
     }
 }
